@@ -18,7 +18,9 @@ header{
 header > div{
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    width: 75vw;
+    max-width: 800px;
+    align-items: flex-end;
 }
 
 header h1{
@@ -79,10 +81,83 @@ section{
 
 .item img{
     width: 80vw;
+    max-width: 450px;
 }
 
 .item p{
     font-size: 15pt;
     color: rgb(0, 252, 21);
     font-family: sans-serif;
+}
+
+@media(min-width: 450px){
+    header div input{
+        display: inline-block;
+        background-color: rgba(255,69,0,0.3);
+        border: 5px dotted purple;
+        height: 100%;
+        box-sizing: border-box;
+        border-right: none;
+        color: white;
+    }
+
+    header div input::placeholder{
+        color: whitesmoke;
+        opacity: 1;
+    }
+
+    header img{
+        border: purple 6px dotted;
+        border-left: none;
+        border-radius: 50%;
+    }
+
+    #pesquisa{
+        border-radius: 0;
+        width: auto;
+        padding: 0 20px;
+    }
+}
+
+@media(min-width: 1050px){
+    #hamburguer{
+        display: none;
+    }
+
+    header div nav{
+        display: inline-block;
+    }
+
+    header div nav a{
+        font-size: 13pt;
+        text-decoration: none;
+        font-family: comic sans MS;
+        margin: 0 10px;
+        color: purple;
+    }
+
+    header div nav a:hover{
+        color: orangered}
+        font-size: 12pt;
+        border: 2px orangered;
+    }
+
+    section{
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    .item img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .item{
+        margin: 0 10px;
+        box-sizing: border-box;
+        width: 29%;
+    }
 }
