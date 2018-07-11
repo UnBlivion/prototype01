@@ -1,15 +1,18 @@
 body{
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    background-color: rgba(128, 0, 128, 0.781);
 }
 
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20vh;
-    background-color: lawngreen;
     min-height: 180px;
+    width: 100%;
+    background-color: lawngreen;
+    position: fixed;
+    top: 0;    
 }
 
 header > div{
@@ -64,4 +67,22 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: calc(25vh + 80px);
+}
+
+.item img{
+    width: 80vw;
+}
+
+.item p{
+    font-size: 15pt;
+    color: rgb(0, 252, 21);
+    font-family: sans-serif;
 }
